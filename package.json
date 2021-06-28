@@ -9,7 +9,7 @@
     "dev": "webpack-dev-server --mode development --inline",
     "build": "webpack --mode production"
   },
-  "author": "ThoughtWorks",
+  "author": "Thoughtworks",
   "repository": {
     "type": "git",
     "url": "https://github.com/thoughtworks/build-your-own-radar"
