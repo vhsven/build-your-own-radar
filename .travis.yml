@@ -5,7 +5,7 @@ node_js:
 jobs:
   include:
     - stage: e2e
-      script: bash ./run_e2e_tests.sh $API_KEY $TEST_CLIENT_ID
+      script: bash ./run_e2e_tests.sh $API_KEY $TEST_CLIENT_ID $TEST_URL
 addons:
   apt:
     packages:
