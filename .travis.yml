@@ -5,8 +5,7 @@ node_js:
 jobs:
   include:
     - stage: e2e
-      script: API_KEY=$API_KEY CLIENT_ID=$TEST_CLIENT_ID npm run dev &; sleep 30; npm run end_to_end_test
-      after_script: ps -eo 'pgid pid command'; ps fj; PID=$(jobs -p); kill -- -$(ps -o pgid= $PID | grep -o [0-9]*); ps fj
+      script: bash ./run_e2e_tests.sh $API_KEY $TEST_CLIENT_ID
 addons:
   apt:
     packages:
