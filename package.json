@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "standard --fix && istanbul cover jasmine",
-    "test:lint": "npx standard",
+    "test": "prettier-standard --write && istanbul cover jasmine",
+    "test:lint": "prettier-standard",
     "dev": "webpack-dev-server --mode development --inline",
     "build": "webpack --mode production"
   },
@@ -36,7 +36,7 @@
     "node-sass": "^4.13.0",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.5.0",
-    "prettier": "^2.4.1",
+    "prettier-standard": "^16.4.1",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.1",
     "tar": ">=5.0.0",
