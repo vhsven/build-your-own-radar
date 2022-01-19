@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "prettier-standard --write && istanbul cover jasmine",
-    "test:lint": "prettier-standard",
+    "test": "jasmine",
+    "test:lint": "prettier-standard --lint",
     "dev": "webpack-dev-server --mode development --inline",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "coverage": "nyc npm run test",
+    "quality": "npm run test:lint && npm run coverage"
   },
   "author": "Thoughtworks",
   "repository": {
@@ -28,12 +30,12 @@
     "expose-loader": "^0.7.5",
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
-    "istanbul": "^0.4.5",
     "jasmine": "^3.3.1",
     "jsdom": "^15.2.1",
     "json-loader": "^0.5.7",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.13.0",
+    "nyc": "^15.1.0",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.5.0",
     "prettier-standard": "^16.4.1",
