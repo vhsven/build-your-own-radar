@@ -115,6 +115,19 @@ module.exports = {
         type: 'asset/resource',
       },
       {
+        test: /\.(csv)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: "/assets/[name].[ext]",
+              emitFile: true,
+            },
+          },
+        ],
+      },
+      {
         test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
         exclude: /node_modules/,
         type: 'asset/resource',
