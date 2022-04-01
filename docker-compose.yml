@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  radar:
+    build: ./
+    container_name: byor
+    image: byor
+    networks: []
+    volumes:
+      - ./dist:/radar/dist
