@@ -90,7 +90,7 @@ self-documenting code,adopt,techniques,FALSE,"Let the source code explain the wh
 sort lego by type - not color,adopt,techniques,FALSE,""
 Ask 5x why,adopt,techniques,FALSE,"For root cause analysis (RCA)"
 NATO alphabet,adopt,techniques,FALSE,""
-diagrams as code,adopt,techniques,FALSE,"e.g., PlantUML (based on GraphViz/DOT)"
+diagrams as code,adopt,techniques,FALSE,"e.g., PlantUML (based on GraphViz/DOT) or Mermaid"
 ephemeral messaging,adopt,techniques,FALSE,""
 end-to-end encrypted chat,adopt,techniques,FALSE,""
 passive investing in index funds,adopt,techniques,FALSE,""
